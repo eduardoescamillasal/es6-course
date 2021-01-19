@@ -36,19 +36,9 @@ This cake is either vanilla or chocolate.
 This cake is not chocolate.
 Therefore, this cake is vanilla.
 */
-
-const getFlavorCake = (flavor) => {
-  if (flavor ==='vanilla' || flavor === 'chocolate') {
-    if (flavor !== 'chocolate') {
-      return true;
-    } else {
-      return false;
-    }
-  } else {
-    return false;
-  }
+const flavors = ['vanilla', 'chocolate'];
+const getFlavorCake = (flavors, isChocolate) => {
+   return flavors.filter((flavor) => flavor !== 'chocolate');
 }
 
-console.log(getFlavorCake('vanilla'));
-console.log(getFlavorCake('chocolate'));
-console.log(getFlavorCake('strawberry'));
+console.log(getFlavorCake(flavors, false)[0]);
