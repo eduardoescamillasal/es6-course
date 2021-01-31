@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+.title{
+  font-size: 18px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+#game-area {
+  margin-top: 64px;
+}
+
+.row {
+  display: flex;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.cubicule{
+  background-color: #bada55;
+  border-radius: 9px;
+  cursor: pointer;
+  height: 100px;
+  margin: 2px;
+  position: relative;
+  width: 100px;
+}
+
+.cubicule2{
+  background-color: red;
+  border-radius: 9px;
+  cursor: pointer;
+  height: 100px;
+  margin: 2px;
+  position: relative;
+  width: 100px;
+}
+.symbol {
+  bottom: 0;
+  cursor: not-allowed;
+  font-family: monospace;
+  font-size: 75px;
+  left: 0;
+  line-height: 100px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+.cross {
+  color: black;
+}
+
+.circle {
+  color: black;
+  font-weight: bold;
+}
+
+.faded {
+  opacity: 50;
+}
+
+
+.author{
+  position: relative;
+  text-indent: 100px;
+  margin-top: 50px;
+  color: white;
+  flex: auto;
+  justify-content: center;
+}
+
+#name {
+  position: relative;
+  color: purple;
+  font-size: 22px;
+  font-family: courier;
+}
