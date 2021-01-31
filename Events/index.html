@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    .background-color {
+      background: orange;
+      border: 1px solid black;
+    }
+
+    .green {
+      background: green;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", addToLog);
+    window.addEventListener("load", checkImageSize);
+
+    function addToLog() {
+      console.log("DOM Content loaded and parsed");
+      const myLog = document.getElementById("log");
+      myLog.innerHTML += "<h1>Hiiii!</h1>";
+    }
+
+    function checkImageSize() {
+      const myImg = document.getElementById("myImg");
+      console.log("Height: " + myImg.offsetHeight + " Width: " + myImg.offsetWidth)
+      myImg.style.width = "400px";
+      myImg.style.height = "auto";
+      myImg.style.borderRadius = " 50%"
+    }
+
+    //for(let i = 0; i < 10000000000; i++){}
+  </script>
+</head>
+<body>
+  <div id="log">
+    <img id="myImg" src="https://i.imgur.com/JEfgBKJ.png" />
+  </div>
+  <div id="clicky">
+    Test text
+    <button>Click here!</button>
+  </div>
+  <div id="background">
+    <h2>Im size h2 header!</h2>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </div>
+  <div id="div2">
+    <form id="myForm" method="post">
+      <input id="myInput" /><br/>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="div3">
+    <p>User is typing</p>
+    <textarea></textarea>
+  </div>
+</body>
+</html>
